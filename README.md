@@ -11,7 +11,9 @@ see if adapter is recognized:
 lsmod | grep rtk_btusb
 
 hciconfig -a
+
 sudo systemctl start bluetooth
+
 sudo hciconfig hci0 up
 
 
@@ -23,6 +25,7 @@ i had problem with connecting 2nd device over UI but it works fine with the CLI
 bluetoothctl
 
 scan on
+
 connect XX:XX:XX:XX:XX:XX
 
 
