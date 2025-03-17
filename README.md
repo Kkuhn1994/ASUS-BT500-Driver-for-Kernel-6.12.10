@@ -3,9 +3,11 @@ i didnt find a working driver for my kernel so i made some changes
 
 
 sudo make install INTERFACE=usb
+
 sudo modprobe rtk_btusb
 
 see if adapter is recognized:
+
 lsmod | grep rtk_btusb
 
 hciconfig -a
